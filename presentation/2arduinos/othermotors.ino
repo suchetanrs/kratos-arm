@@ -97,7 +97,7 @@ void callback(const geometry_msgs::Twist& msg)
   vels.angular.y=vel5;
   vels.angular.z=vel3;
 }
-ros::Subscriber<geometry_msgs::Twist> sub1("cmd_vel", callback); 
+ros::Subscriber<geometry_msgs::Twist> sub1("othermotors2", callback); 
 void setup(){
   pinMode(baserotationpwm,OUTPUT);
   pinMode(basedirection,OUTPUT);
