@@ -26,7 +26,7 @@ def cb(data):
     pub.publish(obj)
 
 rospy.init_node("joyinput",anonymous=True)
-pub=rospy.Publisher("cmd_vel",Twist,queue_size=10)
+pub=rospy.Publisher("othermotors2",Twist,queue_size=10)
 print("ok")
 sub=rospy.Subscriber("joy", Joy, cb)
 rospy.spin()
