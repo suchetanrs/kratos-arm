@@ -94,14 +94,14 @@ void callback(const geometry_msgs::Twist& msg)
     vel2 = 0;
   }
   float bsrot1=msg.angular.x;
-  //float bsrot2=msg.angular.y;
+  float bsrot2=msg.angular.y;
   if(bsrot1==1){
     digitalWrite(basedirection,LOW);//extension(blue-right) 
     vel3 = 255;
     i=2;
     k++;
   }
-  else if(bsrot1==-1){
+  else if(bsrot2==1){
     digitalWrite(basedirection,HIGH);//retraction
     vel3 = 255;
     i=1;
