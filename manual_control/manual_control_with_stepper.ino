@@ -9,7 +9,7 @@
 #define PWM6 4
 #define baserotationpwm 6
 #define basedirection 7
-#define bevel_right_pwm 7
+#define bevel_right_pwm 8
 #define bevel_left_pwm  9
 #define bevel_right_drn 23
 #define bevel_left_drn 2
