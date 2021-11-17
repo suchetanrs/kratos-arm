@@ -54,6 +54,8 @@ void callback(const geometry_msgs::Twist& msg)
   else{
     vel2 = 0;
   }
+  digitalWrite(PWM1,vel1);
+  digitalWrite(PWM2,vel2);
   vels.angular.x=vel1;
   vels.angular.y=vel2;
   vels.angular.z=i;
