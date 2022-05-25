@@ -1,0 +1,21 @@
+sudo jstest /dev/input/js0
+
+sudo chmod a+rw /dev/input/js0
+
+ls -l /dev/input/js0
+
+rosparam set joy_node/dev "/dev/input/js0"
+
+rosrun joy joy_node
+
+rostopic echo joy
+
+rosrun rosserial_python serial_node.py /dev/ttyACM0
+
+/home/suchetan/catkin_ws/src/presentation_newjoy/othermotors.py
+
+
+work left
+publish angular.z of final_ext with the secondary joystick for the 3rd servo.
+
+
